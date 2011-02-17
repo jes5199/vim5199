@@ -52,3 +52,21 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/vim-git-branch-info"]
+	path = bundle/vim-git-branch-info
+	url = git://github.com/taq/vim-git-branch-info.git
+[submodule "bundle/vimtlib"]
+	path = bundle/vimtlib
+	url = git://github.com/tomtom/vimtlib.git
+[submodule "bundle/vim-space"]
+	path = bundle/vim-space
+	url = git://github.com/spiiph/vim-space.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = git://github.com/mortice/taglist.vim.git
+[submodule "bundle/vim-yankring"]
+	path = bundle/vim-yankring
+	url = git://github.com/chrismetcalf/vim-yankring.git
