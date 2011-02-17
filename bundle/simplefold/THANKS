@@ -1,0 +1,17 @@
+
+Sorry if I forgot to list you :P
+
+Dan McCormack
+* added PHP support
+
+Christoph Rauch
+* added Perl support
+
+Bruno Michel
+* fixed bug related to SimpleFold_use_subfolds
+
+Dagfinn Reiersøl
+* improved PHP support
+
+Paul Sadauskas
+* added RSpec support

@@ -1,0 +1,24 @@
+pristine:0000000186-4d638566326ecb0687867ad7b92b18ee7a3f8cce6b0efbc47fb4e30223ccdceb
+Starting with inventory:
+0000003210-00f53496f238ed6574b9b82297d5f860265e8f2be1ed98b8569421b36be2edf3
+[TAG 0.5.0
+Mauricio Fernandez <mfp@acm.org>**20070417085630] 
+hash: 0000001967-43f3d361d460553305bd8c2348a8f7e7f822502bbfa1a68e834d724113468f96
+[SimpleFold.vim: refined ocaml regexps.
+Mauricio Fernandez <mfp@acm.org>**20070503101703] 
+hash: 0000000492-15068c19387a1fb72494420b3ac1ede6fe694915a9987f4de6919da36890a7f6
+[SimpleFold.vim: tweaking the OCaml expressions.
+Mauricio Fernandez <mfp@acm.org>**20070622085952] 
+hash: 0000000219-dfc5b80f9c2e48b96b739a4defc8c4af663873a3a26bdb2cb11ded241f055a30
+[SimpleFold.vim: bumped version to 0.5.1 preliminary.
+Mauricio Fernandez <mfp@acm.org>**20070622090356] 
+hash: 0000000206-ee030d6722725d1bee2513556b5979b30b157f540241cdea2b84d59da7b40fe8
+[SimpleFold.vim, THANKS: improved PHP support, patch by Dagfinn Reiersøl.
+Mauricio Fernandez <mfp@acm.org>**20070622090558] 
+hash: 0000000392-ec729c5c08a0a9139f220aedf4cc001a250ef81c6cc32911c800817e52c30b10
+[SimpleFold.vim: recognize recursive definitions (and) in OCaml.
+Mauricio Fernandez <mfp@acm.org>**20070702125833] 
+hash: 0000000326-dde9471b356c924d9d6147c36da10398c2115306dda06fd2d409ff640f72da03
+[SimpleFold.vim: RSpec support (patch by Paul Sadauskas).
+Mauricio Fernandez <mfp@acm.org>**20070920090251] 
+hash: 0000000446-ffcdea0ff2447340a8dae30f04bb3672ac2bb2ec7e65f837848afaede6ae478b
