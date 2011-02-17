@@ -216,3 +216,6 @@ iabbrev DEBUG! require 'ruby-debug'; debugger; true #DEBUG
 set foldlevel=5
 set list
 set listchars=tab:»·,trail:·
+
+runtime macros/matchit.vim
+
