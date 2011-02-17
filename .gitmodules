@@ -16,3 +16,9 @@
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/vim-afterimage"]
+	path = bundle/vim-afterimage
+	url = git://github.com/tpope/vim-afterimage.git
