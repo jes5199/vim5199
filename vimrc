@@ -142,7 +142,7 @@ map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 augroup git-wip
         autocmd!
-        autocmd BufWritePost * :silent !git wip save "WIP-vim" --editor -- "%" > /dev/null 2> /dev/null
+        autocmd BufWritePost * :silent !git wip save "%" --editor -- "%" > /dev/null 2> /dev/null
 augroup END
 
 set titlestring=%t
@@ -242,9 +242,12 @@ set laststatus=2
 set mouse=a
 
 "set autosave 10
-au InsertLeave * wa
-au CursorHold * wa
+au InsertLeave * silent !
+"au CursorHold * wa
+au CursorHold * silent !
+"au FileChangedShell * exe "!mv <afile> <afile>.".reltime()[0].".bak"
 
 set updatetime=500
 
 set autoread
+set autowrite
