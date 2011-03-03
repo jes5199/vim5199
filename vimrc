@@ -1,3 +1,5 @@
+autocmd!
+
 " vim: textwidth=0
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
@@ -15,9 +17,18 @@ set dir=~/tmp
 set guioptions-=T
 
 set t_Co=256
+
 "if has("gui_running")
 colorscheme inkpot
 "endif
+
+set cursorline
+set cursorcolumn
+
+hi CursorLine cterm=NONE term=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
+hi CursorColumn cterm=NONE term=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
+
+hi Search guibg=NONE gui=underline guifg=NONE
 
 set vb
 
@@ -26,6 +37,8 @@ function! Wide(width)
 	exec "set softtabstop=" . a:width
 	exec "set shiftwidth=" . a:width
 endfunction
+
+command! E :Explore <args>
 
 command! -nargs=1 Wide call Wide(<args>)
 "command! E Sexplore
@@ -214,8 +227,24 @@ set foldmethod=indent
 iabbrev DEBUG! require 'ruby-debug'; debugger; true #DEBUG
 
 set foldlevel=5
+set nofoldenable
+
 set list
 set listchars=tab:»·,trail:·
 
 runtime macros/matchit.vim
 
+let g:git_branch_status_ignore_remotes=1
+let g:git_branch_status_head_current=1
+
+set statusline=%<%f\ %{fugitive#statusline()}%h%m%r%=%-14.(%l,%c%V%)\ %P
+set laststatus=2
+set mouse=a
+
+"set autosave 10
+au InsertLeave * wa
+au CursorHold * wa
+
+set updatetime=500
+
+set autoread
