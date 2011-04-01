@@ -28,7 +28,7 @@ set cursorcolumn
 hi CursorLine cterm=NONE term=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
 hi CursorColumn cterm=NONE term=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
 
-hi Search guibg=NONE gui=underline guifg=NONE
+hi Search guibg=NONE gui=underline guifg=NONE guifg=Cyan
 
 set vb
 
@@ -251,3 +251,8 @@ set updatetime=500
 
 set autoread
 set autowrite
+
+set vb t_vb=
+
+set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor,sm:block-Cursor-blinkwait175-blinkoff150-blinkon175,a:blinkon0
+
