@@ -21,14 +21,43 @@ set t_Co=256
 "if has("gui_running")
 colorscheme inkpot
 "endif
-
 set cursorline
 set cursorcolumn
-
 hi CursorLine cterm=NONE term=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
 hi CursorColumn cterm=NONE term=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
 
-hi Search guibg=NONE gui=underline guifg=NONE guifg=Cyan
+"colorscheme solarized
+
+let g:solarized_bold=1
+let g:solarized_underline=1
+let g:solarized_italic=1
+
+function! ToggleBackground()
+    if (g:solarized_style=="dark")
+    let g:solarized_style="light"
+    colorscheme solarized
+    hi CursorLine cterm=NONE term=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
+    hi CursorColumn cterm=NONE term=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
+
+    hi Search guibg=NONE gui=underline guifg=NONE guifg=#d33682
+    hi Visual guibg=#073642
+else
+    let g:solarized_style="dark"
+    colorscheme solarized
+    hi CursorLine cterm=NONE term=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
+    hi CursorColumn cterm=NONE term=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
+    hi Search guibg=NONE gui=underline guifg=NONE guifg=#d33682
+    hi Visual guibg=#eee8d5
+endif
+endfunction
+
+"call ToggleBackground()
+
+command! Togbg call ToggleBackground()
+nnoremap <F5> :call ToggleBackground()<CR>
+inoremap <F5> <ESC>:call ToggleBackground()<CR>a
+vnoremap <F5> <ESC>:call ToggleBackground()<CR>
+
 
 set vb
 
