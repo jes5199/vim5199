@@ -1,0 +1,6 @@
+put this into ~/.vim
+(you probably already have a directory there with runtime crap in it)
+then run
+  git submodule init
+  git submodule update
+
